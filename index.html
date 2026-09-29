@@ -12,19 +12,19 @@
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Naheem &amp; Reem | 21st September 2026</title>
+<title>Favas Rashid &amp; Lamia Zenbaq | Saturday, 14th November 2026</title>
 
 <!-- OG / WhatsApp preview -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="Naheem &amp; Reem | 21st September 2026">
-<meta property="og:description" content="Monday, 21 September 2026 &middot; Nikkah 10:30 AM &middot; Reception 11 AM &mdash; Green Palace Auditorium, Palace Road, Central Auditorium Hall.">
+<meta property="og:title" content="Favas Rashid &amp; Lamia Zenbaq | Saturday, 14th November 2026">
+<meta property="og:description" content="Saturday, 14 November 2026 &middot; Nikkah 11:00 AM &mdash; Rajah Hall, Muthuvattoor.">
 <meta property="og:image" content="https://naheem-reem-pr7c.vercel.app/og-thumb.jpg">
 <meta property="og:image:secure_url" content="https://naheem-reem-pr7c.vercel.app/og-thumb.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:url" content="https://naheem-reem-pr7c.vercel.app/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Naheem &amp; Reem | 21st September 2026">
-<meta name="twitter:description" content="Monday, 21 September 2026 &middot; Nikkah 10:30 AM &middot; Reception 11 AM &mdash; Green Palace Auditorium, Palace Road, Central Auditorium Hall.">
+<meta name="twitter:title" content="Favas Rashid &amp; Lamia Zenbaq | Saturday, 14th November 2026">
+<meta name="twitter:description" content="Saturday, 14 November 2026 &middot; Nikkah 11:00 AM &mdash; Rajah Hall, Muthuvattoor.">
 <meta name="twitter:image" content="https://naheem-reem-pr7c.vercel.app/og-thumb.jpg">
 
 <!-- runtime origins (standard #17) -->
@@ -45,49 +45,37 @@
 
 <style>
 :root{
-  --paper:#f2f8fd;        /* the landing photograph's own high sky */
-  --paper2:#dfebf7;
-  --sheet:rgba(250,252,254,.90);
-  --ink:#2b3550;
-  --ink2:#586380;
-  --navy:#222c46;
-  --gold:#a9803c;        /* deepened: this build's gate is WHITE, not dark */
-  --gold2:#d8bd85;
-  --blue:#8ea9c6;
-  --blush:#dfb2bc;
-  /* cloud blue — the accent for everything after the landing.
-     --gold is the DEEP printed-card gold, because this build's gate is white
-     and gold has to carry type on it; --gold2 is the light gold and is only
-     ever used on the dark panels (hero Bismillah). */
-  --cloud:#8ea9c6;        /* mid cloud — on navy */
-  --cloud2:#b9cde2;       /* light cloud — on navy */
-  --cloud-deep:#3c5a7c;   /* deep cloud — small caps on the cloud ground (measured to clear 4.5:1) */
-  --line:rgba(43,53,80,.18);
+  --paper:#fdf5f7;        /* warm blush paper */
+  --paper2:#f6e8ec;
+  --sheet:rgba(253,245,247,.92);
+  --ink:#3b0914;
+  --ink2:#6d1829;
+  --navy:#3d0c18;         /* deep burgundy dark panel background */
+  --gold:#d4af37;         /* rich gold */
+  --gold2:#f3d489;        /* light gold */
+  --blue:#96283c;         /* deep rose accent */
+  --blush:#e8b4bc;
+  --cloud:#d88a99;
+  --cloud2:#f5d3d8;
+  --cloud-deep:#96283c;   /* deep burgundy-rose accent */
+  --line:rgba(150,40,60,.18);
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0}
 body{font-family:'Cormorant Garamond',Georgia,serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;display:block}
 
-/* --- paper background (zero raster weight, standard #16) --- */
+/* --- paper background --- */
 #bg{position:fixed;inset:0;z-index:-1;background:
   radial-gradient(120% 90% at 50% 0%,#ffffff 0%,var(--paper) 46%,var(--paper2) 100%);}
-/* the same ink-cloud artwork as the dark panels, held high-key so the whole
-   page reads as one cloud-blue sky rather than clouds-on-panels over white */
 #bg::before{content:"";position:absolute;inset:0;
-  background:url('assets/bg-clouds-soft.jpg') center/cover no-repeat;
-  opacity:.62;}
-#bg::after{content:"";position:absolute;inset:0;opacity:.5;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='none' stroke='%232b3550' stroke-opacity='0.05' stroke-width='0.8'%3E%3Cpath d='M70 6 84 34 114 38 92 60 98 92 70 76 42 92 48 60 26 38 56 34Z'/%3E%3Ccircle cx='70' cy='70' r='46'/%3E%3C/g%3E%3C/svg%3E");
+  background:url('assets/burgundy-bg.jpg') center/cover no-repeat;
+  opacity:.18;}
+#bg::after{content:"";position:absolute;inset:0;opacity:.35;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140' viewBox='0 0 140 140'%3E%3Cg fill='none' stroke='%23d4af37' stroke-opacity='0.15' stroke-width='0.8'%3E%3Cpath d='M70 6 84 34 114 38 92 60 98 92 70 76 42 92 48 60 26 38 56 34Z'/%3E%3Ccircle cx='70' cy='70' r='46'/%3E%3C/g%3E%3C/svg%3E");
   background-size:190px 190px;}
 
-/* --- petals — Sachin_weds_amisha's effect: shape, volume, 3D flutter and the
-       exact 14-petal config copied verbatim. Only the MOTION is rebuilt: Sachin
-       animates `top`, which forces layout every frame ([[sachin-amisha-perf-debt]],
-       standard #17). Here the parent animates translateY (fall) and the child
-       animates translateX + rotate3d (flutter), so the two never fight over the
-       same transform track and the whole thing stays compositor-only.
-       Tones are the cloud-blue equivalents of his three rose gradients. --- */
+/* --- petals --- */
 #petals{position:fixed;inset:0;pointer-events:none;z-index:60;overflow:hidden;perspective:600px}
 body:not(.entered) #petals{display:none}
 .petal-fall{position:absolute;top:0;left:var(--left,0);will-change:transform;
@@ -95,11 +83,11 @@ body:not(.entered) #petals{display:none}
 .petal{width:var(--w,14px);height:calc(var(--w,14px) * 1.18);
   border-radius:100% 0 60% 50% / 60% 0 100% 50%;
   opacity:var(--op,.58);transform-origin:50% 40%;will-change:transform;
-  box-shadow:inset -2px -3px 5px rgba(28,58,96,.30),inset 2px 2px 4px rgba(255,255,255,.38);
+  box-shadow:inset -2px -3px 5px rgba(80,10,25,.30),inset 2px 2px 4px rgba(255,255,255,.38);
   animation:petalFlutter var(--sway,5s) ease-in-out infinite var(--delay,0s)}
-.petal.t-light{background:radial-gradient(120% 120% at 32% 20%,#eaf3fc,#a9c6e2 55%,#7ba3ca 100%)}
-.petal.t-mid  {background:radial-gradient(120% 120% at 32% 20%,#cfe1f3,#86aad0 55%,#5b83ad 100%)}
-.petal.t-deep {background:radial-gradient(120% 120% at 32% 20%,#a9c6e2,#5f88b4 52%,#3d5f8a 100%)}
+.petal.t-light{background:radial-gradient(120% 120% at 32% 20%,#fff0f3,#f0b2bd 55%,#d8697f 100%)}
+.petal.t-mid  {background:radial-gradient(120% 120% at 32% 20%,#f5cad2,#c8526a 55%,#962038 100%)}
+.petal.t-deep {background:radial-gradient(120% 120% at 32% 20%,#d87d90,#961830 52%,#540818 100%)}
 @keyframes petalFall{0%{transform:translateY(-14vh)}100%{transform:translateY(112vh)}}
 @keyframes petalFlutter{
   0%  {transform:translateX(-13px) rotate3d(1,1,.2,0deg)}
@@ -127,26 +115,22 @@ body:not(.entered) #petals{display:none}
   background:linear-gradient(180deg,
     rgba(255,255,255,.46) 0%,rgba(255,255,255,.26) 11%,
     rgba(255,255,255,.10) 20%,rgba(255,255,255,.02) 30%,
-    rgba(242,248,253,0) 48%,rgba(242,248,253,.55) 63%,
-    rgba(242,248,253,.94) 78%,rgba(238,246,252,.99) 100%)}
+    rgba(253,245,247,0) 48%,rgba(253,245,247,.55) 63%,
+    rgba(253,245,247,.94) 78%,rgba(250,236,240,.99) 100%)}
 /* the printed card's hairline frame, carried onto the photograph */
 .gate-frame{position:absolute;inset:14px;z-index:2;pointer-events:none;
-  border:1px solid rgba(169,128,60,.42)}
+  border:1px solid rgba(212,175,55,.5)}
 .gate-top{position:absolute;top:0;left:0;right:0;z-index:3;padding:46px 30px 0;
   text-align:center;transition:opacity .5s ease}
 .gate-cta{position:absolute;bottom:0;left:0;right:0;z-index:3;padding:0 26px 52px;
   text-align:center;background:transparent;transition:opacity .5s ease}
-/* Each text block carries its OWN soft scrim as well as the page veil. The
-   veil is keyed to the PORTRAIT crop; on a landscape screen `cover` pulls the
-   rose row straight up under the names, and the gold "with" measured 3.07:1
-   there (4.81:1 on a phone). These two glows put a known white under the type
-   whatever the crop does, so the numbers hold at every viewport. */
+/* Each text block carries its OWN soft scrim as well as the page veil. */
 .gate-top::before,.gate-cta::before{content:'';position:absolute;z-index:-1;
   left:0;right:0;pointer-events:none}
 .gate-top::before{top:-30px;height:190px;
-  background:radial-gradient(80% 100% at 50% 30%,rgba(248,252,255,.92) 0%,rgba(248,252,255,.55) 52%,rgba(248,252,255,0) 100%)}
+  background:radial-gradient(80% 100% at 50% 30%,rgba(253,245,247,.92) 0%,rgba(253,245,247,.55) 52%,rgba(253,245,247,0) 100%)}
 .gate-cta::before{bottom:0;height:330px;
-  background:radial-gradient(90% 100% at 50% 76%,rgba(246,251,255,.96) 0%,rgba(246,251,255,.82) 46%,rgba(246,251,255,0) 100%)}
+  background:radial-gradient(90% 100% at 50% 76%,rgba(253,245,247,.96) 0%,rgba(253,245,247,.82) 46%,rgba(253,245,247,0) 100%)}
 .gate-bism{font-family:'Amiri','Noto Naskh Arabic',serif;font-size:min(6.2vw,28px);
   white-space:nowrap;line-height:1.4;color:var(--gold);
   text-shadow:0 1px 12px rgba(255,255,255,.95)}
@@ -160,20 +144,15 @@ body:not(.entered) #petals{display:none}
 .gate-amp{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;
   font-weight:400;font-size:19px;letter-spacing:.06em;color:var(--gold);
   text-transform:lowercase;margin:4px 0;text-indent:0}
-/* 19px is normal-size type, not large, so the gate gold has to clear 4.5:1 on
-   the white scrim wherever `cover` happens to put the roses. --gold #a9803c
-   measures 3.60:1 there and #8a6529 dipped to 4.28:1 against the darkest of
-   the landscape crop; #7d5b24 holds 5.0:1 at both. The rule and the Bismillah
-   keep --gold (both are large, and measure 3.3-3.4:1 against a 3:1 bar). */
 .gate-amp{color:#7d5b24}
 .gate-rule{width:52px;height:1px;background:var(--gold);opacity:.75;margin:20px auto 0}
 .gate-sub{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;
   color:var(--ink);margin:16px 0 26px;letter-spacing:.03em;
   text-shadow:0 1px 8px rgba(255,255,255,.9)}
 .open-btn{font-family:'Cinzel',serif;letter-spacing:.24em;font-size:11.5px;
-  text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#1e2a42,#3d5171);
-  border:1px solid rgba(169,128,60,.55);border-radius:40px;padding:15px 34px;cursor:pointer;
-  box-shadow:0 16px 34px -14px rgba(30,42,66,.85);transition:transform .25s ease}
+  text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#5c0f1f,#80142e);
+  border:1px solid rgba(212,175,55,.65);border-radius:40px;padding:15px 34px;cursor:pointer;
+  box-shadow:0 16px 34px -14px rgba(61,12,24,.85);transition:transform .25s ease}
 .open-btn:active{transform:scale(.96)}
 @media(max-height:660px){
   .gate-top{padding-top:28px}
@@ -182,34 +161,21 @@ body:not(.entered) #petals{display:none}
   .gate-rule{margin-top:14px}
 }
 
-/* ══════════════════════════════════════════════════════════════════
-   INSIDE THE INVITE — editorial layout modelled on VijithwedsLakshmi,
-   painted in this invite's own ivory / navy / gold palette so the page
-   and the video gate read as one object.
-   Type stays Cormorant Garamond (display + body) / Cinzel (caps) /
-   Amiri (Arabic) — the gate's faces, no new font request.
-   ══════════════════════════════════════════════════════════════════ */
-
 /* --- main --- */
 #main{opacity:0;transition:opacity 1s ease .2s}
 #main.show{opacity:1}
 
 /* --- progress bar --- */
 #progressBar{position:fixed;top:0;left:0;height:2px;width:0;z-index:75;
-  background:linear-gradient(90deg,var(--cloud-deep),var(--cloud2));transition:width .1s linear}
+  background:linear-gradient(90deg,var(--gold),var(--gold2));transition:width .1s linear}
 
 /* --- nav --- */
-/* The nav is fixed, so it crosses BOTH the near-white sections (hero film,
-   countdown, celebration, wishes) and the ink ones. Its near-white type
-   measured 1.02:1 over the film - invisible. So it carries its OWN ink bar,
-   and it only appears once the guest has left the hero: over the film the
-   screen belongs to the couple, and the hero has its own scroll cue. */
 nav{position:fixed;top:0;left:0;right:0;z-index:65;padding:14px 26px;
   display:flex;justify-content:space-between;align-items:center;pointer-events:none;
   opacity:0;transition:opacity .45s ease}
 body.nav-on nav{opacity:1;
-  background:rgba(24,34,56,.86);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
-  border-bottom:1px solid rgba(198,219,239,.18)}
+  background:rgba(48,6,16,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  border-bottom:1px solid rgba(212,175,55,.25)}
 body.nav-on nav a,body.nav-on nav .nav-logo{pointer-events:auto}
 .nav-logo{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;
   letter-spacing:.14em;color:var(--cloud2);text-shadow:0 1px 10px rgba(10,16,30,.55)}
@@ -255,78 +221,61 @@ body.admin-on nav{top:34px}
   text-transform:uppercase;color:var(--cloud-deep);margin-top:18px;
   text-shadow:0 1px 8px rgba(255,255,255,.95)}
 
-/* ── VERSE BAND — what used to be the hero's left half, now its own panel
-      directly under the film. Its children keep the .hl-* prefix from that
-      lineage; they are simply this band's type. ── */
+/* ── VERSE BAND ── */
 .verse-panel{background:var(--navy);display:flex;flex-direction:column;justify-content:center;
   align-items:center;padding:clamp(56px,8vw,96px) clamp(26px,5vw,64px);position:relative;z-index:2}
-/* it used to be half a split, so it never needed a measure; full width it does
-   - otherwise the verse runs the whole 1280px and stops being readable */
 .verse-panel > *{width:100%;max-width:680px}
 .verse-panel::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:2px;
-  background:linear-gradient(to right,transparent,var(--cloud-deep),transparent)}
+  background:linear-gradient(to right,transparent,var(--gold),transparent)}
 .verse-panel::before{content:'';position:absolute;top:0;right:0;width:240px;height:240px;pointer-events:none;
-  background:radial-gradient(circle at 100% 0,rgba(185,205,226,.26) 0%,transparent 68%)}
+  background:radial-gradient(circle at 100% 0,rgba(212,175,55,.26) 0%,transparent 68%)}
 .hl-bism{font-family:'Amiri','Noto Naskh Arabic',serif;font-size:min(5.6vw,24px);
   white-space:nowrap;line-height:1.5;color:var(--gold2);margin-bottom:20px;
   opacity:0;animation:fadeSlideR .8s ease forwards .1s}
-.hl-eyebrow{font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:.42em;color:var(--cloud-deep);
+.hl-eyebrow{font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:.42em;color:var(--gold2);
   text-transform:uppercase;margin-bottom:22px;opacity:0;animation:fadeSlideR .8s ease forwards .2s}
 .hl-verse{font-family:'Cormorant Garamond',serif;font-style:italic;
   font-size:clamp(13.5px,1.8vw,17px);line-height:1.85;letter-spacing:.02em;
-  color:var(--cloud2);border-left:2px solid var(--cloud-deep);padding-left:18px;
+  color:var(--cloud2);border-left:2px solid var(--gold);padding-left:18px;
   margin-bottom:34px;opacity:0;animation:fadeSlideR .8s ease forwards .4s}
 .hl-verse cite{display:block;font-style:normal;font-family:'Cinzel',serif;
   font-size:9px;letter-spacing:.24em;text-transform:uppercase;
-  color:rgba(185,205,226,.66);margin-top:12px}
+  color:rgba(243,212,137,.8);margin-top:12px}
 .hl-tagline{font-family:'Cormorant Garamond',serif;font-style:italic;
-  font-size:clamp(14px,1.6vw,18px);color:rgba(255,255,255,.5);letter-spacing:.06em;
+  font-size:clamp(14px,1.6vw,18px);color:rgba(255,255,255,.7);letter-spacing:.06em;
   margin-top:26px;opacity:0;animation:fadeSlideR .8s ease forwards .8s}
 .hl-date-strip{display:flex;margin-top:36px;flex-wrap:wrap;
   opacity:0;animation:fadeSlideR .8s ease forwards 1s}
-.ds-item{padding:11px 18px;border:1px solid rgba(142,169,198,.34);text-align:center}
+.ds-item{padding:11px 18px;border:1px solid rgba(212,175,55,.4);text-align:center}
 .ds-item+.ds-item{border-left:none}
 .ds-val{display:block;font-family:'Cinzel',serif;font-size:clamp(16px,2.3vw,24px);
   color:#fff;line-height:1;letter-spacing:.06em}
 .ds-lbl{display:block;font-family:'Cinzel',serif;font-size:8.5px;letter-spacing:.26em;
-  text-transform:uppercase;color:var(--cloud-deep);margin-top:6px}
+  text-transform:uppercase;color:var(--gold2);margin-top:6px}
 @keyframes fadeSlideR{from{opacity:0;transform:translateX(-26px)}to{opacity:1;transform:translateX(0)}}
 
-/* The film itself. Muted + playsinline so it is decoration rather than a
-   player: no controls, no sound, nothing to tap. It does NOT loop - it runs
-   once and holds its last frame. `preload="none"` and the src is only attached
-   in revealInvitation(), so a guest who never opens the invite never downloads
-   1.1 MB of video (#17). */
 #heroVideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
   z-index:0;background:var(--navy)}
-/* the slideshow itself now lives in its own MOMENTS band, further down */
-/* NOTE - this invite has NO photographs of its own (owner, r4 then r5). The
-   gallery band went first, then the family photo in the Blessing section, and
-   with them every photo-slot rule: .photo-slide/.photo-main/.photo-nav/
-   .pn-dot/.photo-counter, then .gallery-ph/.img-slot-add/.img-delete-btn and
-   the whole .fbl-photo-* group. The couple's pictures are the film and the
-   landing photograph, and those are ADMIN-replaceable in their own right. */
+
 .scroll-ind{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);z-index:4;
   display:flex;flex-direction:column;align-items:center;gap:9px;text-decoration:none;
   opacity:0;animation:fadeIn 1s ease forwards 1.6s;-webkit-tap-highlight-color:transparent}
 .scroll-ind span{font-family:'Cinzel',serif;font-size:8.5px;letter-spacing:.32em;
   text-transform:uppercase;color:var(--cloud-deep);text-shadow:0 1px 8px rgba(255,255,255,.95)}
 .scroll-arrow{width:38px;height:38px;border-radius:50%;display:flex;align-items:center;
-  justify-content:center;border:1px solid rgba(169,128,60,.55);color:var(--navy);
-  background:rgba(250,253,255,.72);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
+  justify-content:center;border:1px solid rgba(212,175,55,.6);color:var(--navy);
+  background:rgba(253,245,247,.82);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);
   animation:scrollNudge 2s ease-in-out infinite}
 .scroll-arrow svg{width:15px;height:15px;display:block}
 @keyframes scrollNudge{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
 @media(prefers-reduced-motion:reduce){.scroll-arrow{animation:none}}
-/* The film has its own music, so it needs a way to be silenced. It sits at the
-   exact spot the BGM button takes over when the film ends, so the guest sees
-   one sound control, not two. */
+
 #filmSoundBtn{position:absolute;bottom:22px;right:18px;z-index:5;
   width:42px;height:42px;border-radius:50%;cursor:pointer;padding:0;
   display:flex;align-items:center;justify-content:center;
-  border:1px solid rgba(169,128,60,.55);color:var(--navy);
-  background:rgba(250,253,255,.78);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);
-  box-shadow:0 8px 20px -10px rgba(30,42,66,.5);
+  border:1px solid rgba(212,175,55,.6);color:var(--navy);
+  background:rgba(253,245,247,.85);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);
+  box-shadow:0 8px 20px -10px rgba(61,12,24,.5);
   opacity:0;animation:fadeIn .8s ease forwards 1.2s;transition:opacity .5s ease,transform .2s ease}
 #filmSoundBtn:active{transform:scale(.92)}
 #filmSoundBtn.gone{opacity:0;pointer-events:none;animation:none}
@@ -359,8 +308,8 @@ section{position:relative;z-index:2}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* ── COUNTDOWN BAND ── */
-.cd-band{background:rgba(242,248,253,.56);padding:64px 24px;text-align:center;position:relative;z-index:2;
-  border-top:1px solid rgba(142,169,198,.2);border-bottom:1px solid rgba(142,169,198,.2)}
+.cd-band{background:rgba(253,244,247,.65);padding:64px 24px;text-align:center;position:relative;z-index:2;
+  border-top:1px solid rgba(150,40,60,.18);border-bottom:1px solid rgba(150,40,60,.18)}
 #cdHeading{font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:.4em;
   text-transform:uppercase;color:var(--cloud-deep);margin-bottom:24px}
 .cd-grid{display:inline-flex;flex-wrap:wrap;justify-content:center}
@@ -374,29 +323,29 @@ section{position:relative;z-index:2}
 .details-section{padding:96px 0;overflow:hidden}
 .details-section::before{content:'';position:absolute;pointer-events:none;z-index:0;
   top:-190px;right:-170px;width:520px;height:520px;border-radius:50%;
-  background:radial-gradient(circle,rgba(142,169,198,.20) 0%,transparent 70%)}
+  background:radial-gradient(circle,rgba(150,40,60,.18) 0%,transparent 70%)}
 .details-inner{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:0 40px}
 .invite-lead{font-family:'Cormorant Garamond',serif;font-size:18px;line-height:1.7;
-  color:#4a5570;max-width:540px;margin-top:26px}
+  color:#6d1829;max-width:540px;margin-top:26px}
 .invite-lead b{color:var(--ink);font-weight:600}
 .ev-list{margin:52px auto 0;max-width:560px;display:flex;flex-direction:column;gap:38px}
 .ev-card{position:relative;padding-top:6px}
 .ev-num{position:absolute;top:-14px;right:0;font-family:'Cinzel',serif;
-  font-size:60px;line-height:1;color:rgba(43,53,80,.10);pointer-events:none;user-select:none}
+  font-size:60px;line-height:1;color:rgba(150,40,60,.12);pointer-events:none;user-select:none}
 .ev-kicker{font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:.28em;
   text-transform:uppercase;color:var(--cloud-deep)}
 .ev-name{font-family:'Cormorant Garamond',serif;font-weight:300;
   font-size:clamp(25px,4.2vw,34px);color:var(--navy);line-height:1.16;
   margin:6px 0 18px;letter-spacing:.14em;text-transform:uppercase}
 .ev-name::after{content:'';display:block;width:44px;height:1px;background:var(--cloud-deep);margin-top:14px}
-.udc-card{background:linear-gradient(180deg,rgba(253,254,255,.94),rgba(228,238,249,.94));
+.udc-card{background:linear-gradient(180deg,rgba(255,253,254,.96),rgba(248,232,238,.94));
   border:1px solid var(--line);border-radius:14px;overflow:hidden;
-  box-shadow:0 4px 30px rgba(43,53,80,.07)}
-.ev-card-hero .udc-card{border-color:rgba(142,169,198,.55);box-shadow:0 8px 36px rgba(43,53,80,.12)}
-.ev-card-hero .ev-num{color:rgba(142,169,198,.24)}
+  box-shadow:0 4px 30px rgba(61,12,24,.07)}
+.ev-card-hero .udc-card{border-color:rgba(150,40,60,.4);box-shadow:0 8px 36px rgba(61,12,24,.12)}
+.ev-card-hero .ev-num{color:rgba(150,40,60,.25)}
 .udc-row{display:flex;align-items:center;gap:18px;padding:24px 28px}
 .udc-icon-box{width:50px;height:50px;flex-shrink:0;border-radius:11px;
-  background:rgba(142,169,198,.16);display:flex;align-items:center;justify-content:center;color:var(--navy)}
+  background:rgba(150,40,60,.12);display:flex;align-items:center;justify-content:center;color:var(--navy)}
 .udc-icon-box svg{width:22px;height:22px}
 .udc-text{display:flex;flex-direction:column;gap:4px}
 .udc-label{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.28em;
@@ -410,8 +359,9 @@ section{position:relative;z-index:2}
   letter-spacing:.2em;text-transform:uppercase;text-decoration:none;transition:transform .2s,opacity .3s}
 .udc-btn:active{transform:scale(.98)}
 .udc-btn svg{width:15px;height:15px}
-.udc-btn-primary{background:linear-gradient(135deg,#2b3550,#48577d);color:#fff;
-  box-shadow:0 10px 24px -12px rgba(43,53,80,.8)}
+.udc-btn-primary{background:linear-gradient(135deg,#5c0f1f,#80142e);color:#fff;
+  border:1px solid rgba(212,175,55,.4);
+  box-shadow:0 10px 24px -12px rgba(61,12,24,.8)}
 .udc-btn-primary:hover{opacity:.9}
 .udc-btn-secondary{background:#fff;border:1px solid var(--line);color:var(--navy)}
 .udc-btn-secondary:hover{border-color:var(--cloud-deep)}
@@ -420,108 +370,117 @@ section{position:relative;z-index:2}
 .family-section{background:var(--navy);padding:96px 0;position:relative;overflow:hidden}
 .family-section::before{content:'';position:absolute;top:-100px;left:-100px;
   width:500px;height:500px;pointer-events:none;
-  background:radial-gradient(circle,rgba(142,169,198,.09) 0%,transparent 70%)}
+  background:radial-gradient(circle,rgba(212,175,55,.12) 0%,transparent 70%)}
 .family-inner{position:relative;z-index:1;max-width:1000px;margin:0 auto;padding:0 40px}
 .family-section .s-title{color:#fff}
-.family-section .s-title em{color:var(--cloud2)}
+.family-section .s-title em{color:var(--gold2)}
 .family-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:36px;align-items:center;margin-top:54px}
-.fam-block{border:1px solid rgba(142,169,198,.18);padding:36px;position:relative;
-  background:rgba(255,255,255,.025)}
+.fam-block{border:1px solid rgba(212,175,55,.25);padding:36px;position:relative;
+  background:rgba(255,255,255,.03)}
 .fam-block::after{content:'';position:absolute;bottom:-1px;left:20%;right:20%;height:1px;
-  background:linear-gradient(90deg,transparent,var(--cloud-deep),transparent)}
-/* the NAME leads and the role sits under it (owner, r6), so the gap that used
-   to separate role-from-name now separates role-from-parents */
+  background:linear-gradient(90deg,transparent,var(--gold),transparent)}
 .fb-role{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.34em;
-  text-transform:uppercase;color:var(--cloud-deep);margin-bottom:20px}
+  text-transform:uppercase;color:var(--gold2);margin-bottom:20px}
 .fb-name{font-family:'Cormorant Garamond',serif;font-weight:300;
   font-size:clamp(27px,3.8vw,38px);color:#fff;line-height:1.1;margin-bottom:11px;
   letter-spacing:.18em;text-transform:uppercase;text-indent:.18em}
 .fb-details{font-family:'Cormorant Garamond',serif;font-size:17px;line-height:1.9;
-  color:rgba(255,255,255,.58)}
-.fb-details strong{color:rgba(255,255,255,.9);font-weight:500}
-.fb-addr{margin-top:14px;padding-top:14px;border-top:1px solid rgba(142,169,198,.16);
+  color:rgba(255,255,255,.68)}
+.fb-details strong{color:rgba(255,255,255,.95);font-weight:500}
+.fb-addr{margin-top:14px;padding-top:14px;border-top:1px solid rgba(212,175,55,.2);
   font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15.5px;
-  line-height:1.7;color:rgba(255,255,255,.42)}
+  line-height:1.7;color:rgba(255,255,255,.5)}
 .fam-center{display:flex;flex-direction:column;align-items:center;gap:12px}
-.fc-line{width:1px;height:50px;background:linear-gradient(to bottom,rgba(142,169,198,.55),transparent)}
-.fc-ring{width:62px;height:62px;border-radius:50%;border:1px solid rgba(142,169,198,.45);
+.fc-line{width:1px;height:50px;background:linear-gradient(to bottom,rgba(212,175,55,.6),transparent)}
+.fc-ring{width:62px;height:62px;border-radius:50%;border:1px solid rgba(212,175,55,.5);
   display:flex;align-items:center;justify-content:center}
-.fc-inner{width:46px;height:46px;border-radius:50%;background:rgba(142,169,198,.12);
-  display:flex;align-items:center;justify-content:center;color:var(--cloud2)}
+.fc-inner{width:46px;height:46px;border-radius:50%;background:rgba(212,175,55,.15);
+  display:flex;align-items:center;justify-content:center;color:var(--gold2)}
 .fc-inner svg{width:22px;height:22px}
 .compliments-strip{text-align:center;margin-top:48px;padding-top:38px;
-  border-top:1px solid rgba(142,169,198,.14);
-  font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.4)}
-.compliments-strip b{color:var(--cloud2);font-weight:400;font-style:normal}
+  border-top:1px solid rgba(212,175,55,.18);
+  font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:rgba(255,255,255,.5)}
+.compliments-strip b{color:var(--gold2);font-weight:400;font-style:normal}
 .compliments-lbl{display:block;font-family:'Cinzel',serif;font-style:normal;font-size:9px;
-  letter-spacing:.32em;text-transform:uppercase;color:var(--cloud-deep);margin-bottom:12px}
+  letter-spacing:.32em;text-transform:uppercase;color:var(--gold2);margin-bottom:12px}
 
 /* ── BLESSING (du'a) ── */
-.family-blessing{background:rgba(223,235,247,.50);padding:80px 0;position:relative;z-index:2}
+.family-blessing{background:rgba(248,230,236,.55);padding:80px 0;position:relative;z-index:2}
 .fbl-inner{max-width:720px;margin:0 auto;padding:0 24px;text-align:center;position:relative;z-index:1}
 .family-blessing .s-title{text-align:center}
 .fbl-divider{width:58px;height:1px;background:var(--cloud-deep);margin:26px auto}
-/* the du'a's dedication line, which used to sit over the photo */
 .fbl-caption{font-family:'Cormorant Garamond',serif;font-style:italic;
   font-size:clamp(20px,3.4vw,28px);color:var(--navy);margin-bottom:8px}
 .fbl-sub{font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:.34em;
   text-transform:uppercase;color:var(--cloud-deep)}
 .fbl-arabic{font-family:'Amiri','Noto Naskh Arabic',serif;direction:rtl;
-  font-size:clamp(17px,2.8vw,22px);line-height:1.9;color:#7d5d22;margin-bottom:14px}  /* deeper gold: the light gold measured 1.49:1 on the cloud ground */
+  font-size:clamp(17px,2.8vw,22px);line-height:1.9;color:#8a6529;margin-bottom:14px}
 .fbl-quote{font-family:'Cormorant Garamond',serif;font-style:italic;
   font-size:clamp(15px,2.2vw,18px);line-height:1.8;color:var(--ink)}
 .fbl-quote cite{display:block;font-style:normal;font-family:'Cinzel',serif;font-size:9px;
   letter-spacing:.24em;text-transform:uppercase;color:var(--cloud-deep);margin-top:12px}
 
+/* ── PHOTO SPOTLIGHT ── */
+.photo-spotlight-section{padding:72px 0 40px;background:rgba(253,245,247,.75);position:relative;z-index:2;text-align:center}
+.pss-inner{max-width:680px;margin:0 auto;padding:0 24px}
+.photo-card-wrap{position:relative;display:inline-block;margin-top:28px;padding:12px;background:linear-gradient(135deg,#ffffff,#fdf5f7);border:1px solid rgba(212,175,55,.45);border-radius:16px;box-shadow:0 18px 45px -12px rgba(61,12,24,.22);transition:transform .4s ease,box-shadow .4s ease;animation:photoFloat 5s ease-in-out infinite alternate}
+.photo-card-wrap:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 24px 55px -10px rgba(61,12,24,.32),0 0 30px rgba(212,175,55,.35)}
+.photo-card-frame{position:relative;overflow:hidden;border-radius:12px;border:1px solid rgba(212,175,55,.3)}
+.photo-card-frame img{width:100%;max-width:520px;height:auto;display:block;object-fit:cover;transition:transform .6s ease}
+.photo-card-wrap:hover .photo-card-frame img{transform:scale(1.04)}
+.photo-card-frame::after{content:'';position:absolute;inset:8px;border:1px solid rgba(212,175,55,.4);border-radius:8px;pointer-events:none}
+.photo-caption{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(18px,2.6vw,22px);color:var(--navy);margin-top:16px;letter-spacing:.04em}
+@keyframes photoFloat{0%{transform:translateY(0)}100%{transform:translateY(-8px)}}
+
 /* ── WISHES ── */
-.wishes-section{padding:96px 0;overflow:hidden;background:rgba(242,248,253,.46)}
+.wishes-section{padding:96px 0;overflow:hidden;background:rgba(253,244,247,.55)}
 .wishes-section::after{content:'';position:absolute;pointer-events:none;z-index:0;
   bottom:-210px;left:-180px;width:520px;height:520px;border-radius:50%;
-  background:radial-gradient(circle,rgba(142,169,198,.24) 0%,transparent 70%)}
+  background:radial-gradient(circle,rgba(150,40,60,.2) 0%,transparent 70%)}
 .wishes-inner{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:0 40px}
 .wform{margin-top:44px}
-.wfield{display:block;width:100%;background:transparent;border:none;
-  border-bottom:1px solid var(--line);font-family:'Cormorant Garamond',serif;
-  font-size:18px;color:var(--navy);padding:14px 0;outline:none;resize:none;
-  transition:border-color .3s;border-radius:0}
-.wfield:focus{border-bottom-color:var(--cloud-deep)}
-.wfield::placeholder{color:rgba(43,53,80,.34);font-style:italic}
+.wfield{display:block;width:100%;background:rgba(253,254,255,.85);border:none;
+  border-bottom:2px solid rgba(150,40,60,.35);font-family:'Cormorant Garamond',serif;
+  font-size:18px;color:var(--navy);padding:14px;outline:none;resize:none;
+  transition:border-color .3s;border-radius:8px 8px 0 0}
+.wfield:focus{background:rgba(253,254,255,.95);border-bottom-color:var(--cloud-deep)}
+.wfield::placeholder{color:rgba(109,24,41,.55);font-style:italic}
 textarea.wfield{min-height:96px}
-.wfl-submit{width:100%;margin-top:26px;padding:17px;border:1px solid rgba(212,175,55,.3);
-  border-radius:8px;cursor:pointer;background:linear-gradient(135deg,#2b3550,#48577d);
+.wfl-submit{width:100%;margin-top:26px;padding:17px;border:1px solid rgba(212,175,55,.4);
+  border-radius:8px;cursor:pointer;background:linear-gradient(135deg,#5c0f1f,#80142e);
   color:#fff;font-family:'Cinzel',serif;font-size:11px;letter-spacing:.4em;
-  text-transform:uppercase;box-shadow:0 8px 24px -6px rgba(43,53,80,.4);
+  text-transform:uppercase;box-shadow:0 8px 24px -6px rgba(61,12,24,.5);
   transition:transform .2s,box-shadow .2s,opacity .3s}
-.wfl-submit:hover{transform:translateY(-2px);box-shadow:0 12px 28px -4px rgba(43,53,80,.5)}
+.wfl-submit:hover{transform:translateY(-2px);box-shadow:0 12px 28px -4px rgba(61,12,24,.6)}
 .wfl-submit:disabled{opacity:.55;transform:none}
 .wwall{margin-top:54px;text-align:center}
 .wish-count-header{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:28px;flex-wrap:wrap}
 .wish-count-label{display:inline-flex;align-items:center;justify-content:center;gap:8px;
   font-family:'Cinzel',serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;
-  color:#7d5b24;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(246,240,228,.96));
+  color:#7d5b24;background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(250,236,240,.96));
   border:1px solid rgba(212,175,55,.45);padding:9px 22px;border-radius:30px;
   box-shadow:0 4px 18px rgba(125,91,36,.10);margin:0}
 .wish-count-label span{color:var(--navy);font-weight:600;font-size:13px}
 .view-more-side-btn{display:inline-flex;align-items:center;justify-content:center;
   font-family:'Cinzel',serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--navy);background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(246,240,228,.96));
+  color:var(--navy);background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(250,236,240,.96));
   border:1px solid rgba(212,175,55,.45);padding:9px 20px;border-radius:30px;cursor:pointer;
   box-shadow:0 4px 14px rgba(125,91,36,.10);transition:all .2s ease;font-weight:600}
 .view-more-side-btn:hover{border-color:rgba(212,175,55,.75);background:#fff;transform:translateY(-1px)}
 #wgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px;text-align:left}
-.wcard{background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(246,250,255,.93));
-  border:1px solid rgba(212,175,55,.3);border-radius:10px;padding:16px 18px;
-  box-shadow:0 4px 16px rgba(43,53,80,.05);animation:rise .4s ease both;position:relative;
+.wcard{background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(253,242,246,.93));
+  border:1px solid rgba(212,175,55,.35);border-radius:10px;padding:16px 18px;
+  box-shadow:0 4px 16px rgba(61,12,24,.05);animation:rise .4s ease both;position:relative;
   transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
-.wcard:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(43,53,80,.10);border-color:rgba(212,175,55,.6)}
+.wcard:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(61,12,24,.10);border-color:rgba(212,175,55,.6)}
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 .wc-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
 .wc-av{width:32px;height:32px;border-radius:50%;flex:0 0 32px;display:flex;
   align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:12px;
-  font-weight:600;color:#fff;background:linear-gradient(135deg,#2b3550,#48577d);
-  border:1.5px solid rgba(212,175,55,.45);box-shadow:0 2px 6px rgba(43,53,80,.12)}
+  font-weight:600;color:#fff;background:linear-gradient(135deg,#5c0f1f,#80142e);
+  border:1.5px solid rgba(212,175,55,.5);box-shadow:0 2px 6px rgba(61,12,24,.15)}
 .wc-name{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--navy);font-weight:600;line-height:1.2}
-.wc-time{font-family:'Cinzel',serif;font-size:8px;letter-spacing:.14em;
+.wc-time{font-family:'Cinzel',serif;font-size:8.5px;letter-spacing:.14em;
   text-transform:uppercase;color:var(--ink2);opacity:.65}
 .wc-msg{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;
   line-height:1.55;color:var(--ink2)}
@@ -586,41 +545,41 @@ textarea.wfield{min-height:96px}
 /* ── FOOTER ── */
 footer{background:var(--navy);padding:56px 40px 96px;display:grid;
   grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;
-  border-top:1px solid rgba(142,169,198,.14);position:relative;z-index:2}
+  border-top:1px solid rgba(212,175,55,.2);position:relative;z-index:2}
 .ft-left{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;
-  line-height:1.85;color:rgba(255,255,255,.34)}
+  line-height:1.85;color:rgba(255,255,255,.5)}
 .ft-center{font-family:'Cormorant Garamond',serif;font-weight:300;text-align:center;
   font-size:clamp(22px,3vw,34px);letter-spacing:.16em;text-transform:uppercase;
-  text-indent:.16em;color:var(--cloud2)}
+  text-indent:.16em;color:var(--gold2)}
 .ft-right{text-align:right;font-family:'Cinzel',serif;font-size:9px;letter-spacing:.24em;
-  text-transform:uppercase;color:rgba(255,255,255,.3);line-height:2.1}
+  text-transform:uppercase;color:rgba(255,255,255,.45);line-height:2.1}
 .foot-card-row{grid-column:1/-1;display:flex;justify-content:center;margin-top:34px}
 #cardDownloadBtn{font-family:'Cinzel',serif;font-size:10px;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--cloud2);text-decoration:none;
-  border:1px solid rgba(142,169,198,.6);border-radius:30px;padding:12px 24px;
+  text-transform:uppercase;color:var(--gold2);text-decoration:none;
+  border:1px solid rgba(212,175,55,.5);border-radius:30px;padding:12px 24px;
   display:inline-block;transition:background .3s,color .3s}
-#cardDownloadBtn:hover{background:var(--cloud-deep);color:var(--navy)}
+#cardDownloadBtn:hover{background:var(--gold);color:var(--navy)}
 #cardDownloadBtn:active{transform:scale(.97)}
 .footer-credit-row{grid-column:1/-1;display:flex;align-items:center;justify-content:center;
   flex-wrap:wrap;gap:18px;margin-top:22px;padding-top:20px;
-  border-top:1px solid rgba(142,169,198,.12)}
-#pdfDownloadBtn{background:none;border:none;cursor:pointer;color:var(--cloud2);opacity:.6;
+  border-top:1px solid rgba(212,175,55,.15)}
+#pdfDownloadBtn{background:none;border:none;cursor:pointer;color:var(--gold2);opacity:.6;
   padding:6px;transition:opacity .2s;display:inline-flex;align-items:center}
 #pdfDownloadBtn:hover{opacity:1}
 #pdfDownloadBtn svg{width:20px;height:20px;display:block}
-.dw{font-family:'Cinzel',serif;font-size:9px;letter-spacing:.3em;text-transform:uppercase;
-  color:rgba(255,255,255,.32);text-decoration:none;cursor:pointer;user-select:none}
-.dw span{color:var(--cloud2)}
+.dw{font-family:'Cinzel',serif;font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(255,255,255,.4);text-decoration:none;cursor:pointer;user-select:none}
+.dw span{color:var(--gold2)}
 #adminEntryBtn{background:none;border:none;cursor:pointer;font-family:'Cinzel',serif;
   font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;
-  color:rgba(255,255,255,.24);padding:6px 8px;transition:color .2s}
-#adminEntryBtn:hover,#adminEntryBtn:active{color:var(--cloud2)}
+  color:rgba(255,255,255,.3);padding:6px 8px;transition:color .2s}
+#adminEntryBtn:hover,#adminEntryBtn:active{color:var(--gold2)}
 .foot-social-row{grid-column:1/-1;display:flex;justify-content:center;gap:12px;margin-top:26px}
-.foot-social{width:38px;height:38px;border-radius:50%;border:1px solid rgba(142,169,198,.5);
-  display:flex;align-items:center;justify-content:center;color:var(--cloud2);
+.foot-social{width:38px;height:38px;border-radius:50%;border:1px solid rgba(212,175,55,.4);
+  display:flex;align-items:center;justify-content:center;color:var(--gold2);
   text-decoration:none;transition:background .3s,color .3s,transform .25s}
 .foot-social svg{width:17px;height:17px}
-.foot-social:hover,.foot-social:active{background:var(--cloud-deep);color:var(--navy);transform:translateY(-3px)}
+.foot-social:hover,.foot-social:active{background:var(--gold);color:var(--navy);transform:translateY(-3px)}
 
 
 /* NOTE - this build ships NO decorative line art. The donor carried three
@@ -655,81 +614,65 @@ footer{background:var(--navy);padding:56px 40px 96px;display:grid;
    ══════════════════════════════════════════════════════════════════ */
 .verse-panel,.editorial-band,.family-section,footer{
   background-color:var(--navy);
-  background-image:linear-gradient(rgba(24,34,56,.34),rgba(24,34,56,.34)),url('assets/bg-clouds-deep.jpg');
+  background-image:linear-gradient(rgba(48,6,16,.65),rgba(48,6,16,.65)),url('assets/burgundy-bg.jpg');
   background-size:cover;
   background-position:center;
-  background-repeat:no-repeat;
+  background-repeat:repeat;
 }
-/* an empty photo slot and the film panel behind a still-loading video are
-   navy too — let the clouds through a lighter veil, so neither reads as a
-   dead rectangle */
 #heroVideo{
   background-color:var(--navy);
-  background-image:linear-gradient(rgba(24,34,56,.26),rgba(24,34,56,.26)),url('assets/bg-clouds-deep.jpg');
+  background-image:linear-gradient(rgba(48,6,16,.45),rgba(48,6,16,.45)),url('assets/burgundy-bg.jpg');
   background-size:cover;
   background-position:center;
-  background-repeat:no-repeat;
+  background-repeat:repeat;
 }
 .verse-panel *,.editorial-band *,.family-section *,footer *{
-  text-shadow:0 1px 10px rgba(18,27,46,.60);
+  text-shadow:0 1px 10px rgba(25,3,8,.70);
 }
-/* the couple's names carry the most weight — give them a deeper anchor */
-.ft-center,.fb-name{text-shadow:0 2px 16px rgba(14,22,38,.72);}
+.ft-center,.fb-name{text-shadow:0 2px 16px rgba(20,2,6,.85);}
 
-/* The donor washed a florals jpeg behind the wishes and a silk jpeg behind
-   the blessing. Both are gone: the light sections here are TRANSLUCENT over
-   #bg, so what shows through them is the same cloudscape as everywhere else.
-   One sky, two files, no per-section wallpaper. */
-/* WISH FORM legibility over the cloudscape — transparent underline fields
-   with a 34%-alpha placeholder disappear into the pattern, so each field
-   gets a soft bed, a weightier placeholder and a visible underline. */
 .wfield{
-  background:rgba(253,254,255,.82);
-  border-bottom:2px solid rgba(95,127,163,.42);
-  border-radius:9px 9px 0 0;
+  background:rgba(253,254,255,.85);
+  border-bottom:2px solid rgba(150,40,60,.35);
+  border-radius:8px 8px 0 0;
   padding:14px 14px;
 }
 .wfield:focus{background:rgba(253,254,255,.95);border-bottom-color:var(--cloud-deep);}
-.wfield::placeholder{color:rgba(43,53,80,.62);font-style:italic;}
+.wfield::placeholder{color:rgba(109,24,41,.55);font-style:italic;}
 
-/* ── TYPE LIFT ON THE INK-CLOUD PANELS ──
-   Measured, not eyeballed: against the artwork's BRIGHTEST cloud the labels
-   below sat at 1.44:1 (a dark-blue accent chosen for the light sections had
-   been applied to elements that actually live on the dark panels). Everything
-   here is re-keyed to near-white so it clears a readable ratio over the
-   palest part of the picture, which is the worst case. */
+/* ── TYPE LIFT ON THE INK-CLOUD PANELS ── */
 .hl-eyebrow,.ds-lbl,.fb-role,.compliments-lbl,
 .family-section .s-label,.nav-logo,.nav-links a,
-.fc-inner,#pdfDownloadBtn,.foot-social,#cardDownloadBtn{color:#eaf2fc;}
-.hl-verse{color:#eef5fd;border-left-color:rgba(255,255,255,.6);}
-.hl-verse cite{color:rgba(255,255,255,.78);}
-.hl-tagline{color:rgba(255,255,255,.9);}
-.ds-item{border-color:rgba(255,255,255,.45);}
+.fc-inner,#pdfDownloadBtn,.foot-social,#cardDownloadBtn{color:var(--gold2);}
+.hl-verse{color:#fff5f7;border-left-color:var(--gold);}
+.hl-verse cite{color:rgba(243,212,137,.85);}
+.hl-tagline{color:rgba(255,255,255,.85);}
+.ds-item{border-color:rgba(212,175,55,.45);}
 .marquee-item{color:rgba(255,255,255,.66);}
-.marquee-sep{color:#d3e3f5;opacity:.9;}
-.family-section .s-title em{color:#d3e3f5;}
+.marquee-sep{color:var(--gold2);opacity:.9;}
+.family-section .s-title em{color:var(--gold2);}
 .fb-details{color:rgba(255,255,255,.9);}
 .fb-details strong{color:#fff;}
-.fb-addr{color:rgba(255,255,255,.78);border-top-color:rgba(255,255,255,.32);}
-.fam-block{border-color:rgba(255,255,255,.38);background:rgba(20,42,68,.45);}
-.fam-block::after{background:linear-gradient(90deg,transparent,rgba(255,255,255,.7),transparent);}
-.fc-ring{border-color:rgba(255,255,255,.5);}
-.fc-line{background:linear-gradient(to bottom,rgba(255,255,255,.62),transparent);}
-.compliments-strip{color:rgba(255,255,255,.84);border-top-color:rgba(255,255,255,.24);}
+.fb-addr{color:rgba(255,255,255,.78);border-top-color:rgba(212,175,55,.3);}
+.fam-block{border-color:rgba(212,175,55,.35);background:rgba(48,6,16,.45);}
+.fam-block::after{background:linear-gradient(90deg,transparent,var(--gold),transparent);}
+.fc-ring{border-color:rgba(212,175,55,.5);}
+.fc-line{background:linear-gradient(to bottom,rgba(212,175,55,.62),transparent);}
+.compliments-strip{color:rgba(255,255,255,.84);border-top-color:rgba(212,175,55,.24);}
 .compliments-strip b{color:#fff;}
 .ft-left{color:rgba(255,255,255,.88);}
 .ft-right{color:rgba(255,255,255,.82);}
-.ft-center{color:#eaf2fc;}
+.ft-center{color:var(--gold2);}
 .dw{color:rgba(255,255,255,.8);}
-.dw span{color:#d3e3f5;}
+.dw span{color:var(--gold2);}
 #adminEntryBtn{color:rgba(255,255,255,.66);}
 #adminEntryBtn:hover,#adminEntryBtn:active{color:#fff;}
-.foot-social{border-color:rgba(255,255,255,.52);}
-.foot-social:hover,.foot-social:active{background:#eaf2fc;color:var(--navy);border-color:#eaf2fc;}
-#cardDownloadBtn{border-color:rgba(255,255,255,.6);}
-#cardDownloadBtn:hover{background:#eaf2fc;color:var(--navy);}
-.footer-credit-row{border-top-color:rgba(255,255,255,.2);}
-.verse-panel::after{background:linear-gradient(to right,transparent,rgba(255,255,255,.55),transparent);}
+.foot-social{border-color:rgba(212,175,55,.52);}
+.foot-social:hover,.foot-social:active{background:var(--gold);color:var(--navy);border-color:var(--gold);}
+#cardDownloadBtn{border-color:rgba(212,175,55,.6);}
+#cardDownloadBtn:hover{background:var(--gold);color:var(--navy);}
+.footer-credit-row{border-top-color:rgba(212,175,55,.2);}
+.verse-panel::after{background:linear-gradient(to right,transparent,var(--gold),transparent);}
 
 /* ── RESPONSIVE ── */
 @media(max-width:820px){
@@ -841,13 +784,13 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
 
   <div class="gate-top">
     <div class="gate-bism" lang="ar">&#65021;</div>
-    <div class="gate-eyebrow">Wedding Ceremony &amp; Reception</div>
+    <div class="gate-eyebrow">Nikkah Ceremony &amp; Celebration</div>
   </div>
 
   <div class="gate-cta">
-    <div class="gate-names">Mohamed Naheem<span class="gate-amp">with</span>Reem Fathima</div>
+    <div class="gate-names">Favas Rashid<span class="gate-amp">with</span>Lamia Zenbaq</div>
     <div class="gate-rule"></div>
-    <div class="gate-sub">Monday &middot; 21 September 2026</div>
+    <div class="gate-sub">Saturday &middot; 14 November 2026</div>
     <button class="open-btn" onclick="openInvite()">Open Invitation</button>
   </div>
 </div>
@@ -859,7 +802,7 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
 
 <!-- NAV -->
 <nav class="no-pdf">
-  <div class="nav-logo">M &amp; R</div>
+  <div class="nav-logo">F &amp; L</div>
   <div class="nav-links">
     <a href="#details">Events</a>
     <a href="#family">Family</a>
@@ -876,9 +819,9 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
   <div class="hero-frame"></div>
 
   <div class="hero-overlay">
-    <h1 class="ho-names">Mohamed Naheem<span class="ho-amp">with</span>Reem Fathima</h1>
+    <h1 class="ho-names">Favas Rashid<span class="ho-amp">with</span>Lamia Zenbaq</h1>
     <div class="ho-rule"></div>
-    <div class="ho-date">Monday &middot; 21 September 2026</div>
+    <div class="ho-date">Saturday &middot; 14 November 2026</div>
   </div>
 
   <button id="filmSoundBtn" class="no-pdf" type="button" onclick="toggleFilmSound()"
@@ -901,7 +844,7 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
 <!-- VERSE BAND -->
 <section class="verse-panel" id="verse">
   <div class="hl-bism" lang="ar">&#65021;</div>
-  <div class="hl-eyebrow">Wedding Ceremony &amp; Reception &middot; 2026</div>
+  <div class="hl-eyebrow">Nikkah Ceremony &middot; 2026</div>
   <div class="hl-verse">
     &ldquo;And among His signs is that He created for you mates from among yourselves,
     that you may dwell in tranquillity with them, and He has placed between you
@@ -911,26 +854,26 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
   <div class="hl-tagline">By the grace of the Almighty</div>
 
   <div class="hl-date-strip">
-    <div class="ds-item"><span class="ds-val">21</span><span class="ds-lbl">Date</span></div>
-    <div class="ds-item"><span class="ds-val">SEP</span><span class="ds-lbl">Month</span></div>
+    <div class="ds-item"><span class="ds-val">14</span><span class="ds-lbl">Date</span></div>
+    <div class="ds-item"><span class="ds-val">NOV</span><span class="ds-lbl">Month</span></div>
     <div class="ds-item"><span class="ds-val">2026</span><span class="ds-lbl">Year</span></div>
-    <div class="ds-item"><span class="ds-val">10:30 AM</span><span class="ds-lbl">Onwards</span></div>
+    <div class="ds-item"><span class="ds-val">11:00 AM</span><span class="ds-lbl">Nikkah</span></div>
   </div>
 </section>
 
 <!-- MARQUEE BAND -->
 <div class="editorial-band no-pdf">
   <div class="marquee-track">
-    <span class="marquee-item">Mohamed Naheem <span class="marquee-sep">&#10022;</span></span>
-    <span class="marquee-item">Reem Fathima <span class="marquee-sep">&#10022;</span></span>
-    <span class="marquee-item">Wedding Ceremony &amp; Reception &middot; 21 September 2026 <span class="marquee-sep">&#10022;</span></span>
-    <span class="marquee-item">Green Palace Auditorium <span class="marquee-sep">&#10022;</span></span>
-    <span class="marquee-item">Palace Road &middot; Central Auditorium Hall <span class="marquee-sep">&#10022;</span></span>
-    <span class="marquee-item">Mohamed Naheem <span class="marquee-sep">&#10022;</span></span>
-    <span class="marquee-item">Reem Fathima <span class="marquee-sep">&#10022;</span></span>
-    <span class="marquee-item">Wedding Ceremony &amp; Reception &middot; 21 September 2026 <span class="marquee-sep">&#10022;</span></span>
-    <span class="marquee-item">Green Palace Auditorium <span class="marquee-sep">&#10022;</span></span>
-    <span class="marquee-item">Palace Road &middot; Central Auditorium Hall <span class="marquee-sep">&#10022;</span></span>
+    <span class="marquee-item">Favas Rashid <span class="marquee-sep">&#10022;</span></span>
+    <span class="marquee-item">Lamia Zenbaq <span class="marquee-sep">&#10022;</span></span>
+    <span class="marquee-item">Nikkah Ceremony &middot; 14 November 2026 <span class="marquee-sep">&#10022;</span></span>
+    <span class="marquee-item">Rajah Hall, Muthuvattoor <span class="marquee-sep">&#10022;</span></span>
+    <span class="marquee-item">Lunch Thereafter <span class="marquee-sep">&#10022;</span></span>
+    <span class="marquee-item">Favas Rashid <span class="marquee-sep">&#10022;</span></span>
+    <span class="marquee-item">Lamia Zenbaq <span class="marquee-sep">&#10022;</span></span>
+    <span class="marquee-item">Nikkah Ceremony &middot; 14 November 2026 <span class="marquee-sep">&#10022;</span></span>
+    <span class="marquee-item">Rajah Hall, Muthuvattoor <span class="marquee-sep">&#10022;</span></span>
+    <span class="marquee-item">Lunch Thereafter <span class="marquee-sep">&#10022;</span></span>
   </div>
 </div>
 
@@ -953,14 +896,14 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
       <h2 class="s-title">One day,<br><em>one joy shared</em></h2>
       <div class="s-rule"></div>
       <p class="invite-lead">
-        We, <b>Suhra</b> &amp; <b>Moideen</b>, cordially invite you to the wedding ceremony and reception of our beloved son <b>Mohamed Naheem</b> with <b>Reem Fathima</b>, daughter of <b>Abida</b> &amp; <b>Abbas</b>.
+        We, <b>Mr. V.P. Sharafudheen</b> &amp; <b>Mrs. Hasna Sharafudheen</b> (Valiyakath Perum Veetil Pookulam Road, Chavakkad), cordially invite you with family and friends to the Nikkah ceremony of our beloved daughter <b>Lamia Zenbaq</b> with <b>Favas Rashid</b>, son of <b>Mr. K.V. Rashid</b> &amp; <b>Mrs. Meharunisa</b>.
       </p>
     </div>
 
     <div class="ev-list">
       <article class="ev-card ev-card-hero reveal">
         <span class="ev-num">01</span>
-        <p class="ev-kicker">Monday &middot; 21 September 2026</p>
+        <p class="ev-kicker">Saturday &middot; 14 November 2026 &middot; 4 Jumada al-Akhirah 1448 AH</p>
         <h3 class="ev-name">Holy Nikkah Ceremony</h3>
         <div class="udc-card">
           <div class="udc-row">
@@ -969,7 +912,8 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
             </div>
             <div class="udc-text">
               <span class="udc-label">Time</span>
-              <span class="udc-val-main">10:30 AM</span>
+              <span class="udc-val-main">11:00 AM</span>
+              <span class="udc-val-sub">(Lunch Thereafter)</span>
             </div>
           </div>
           <div class="udc-divider"></div>
@@ -979,37 +923,8 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
             </div>
             <div class="udc-text">
               <span class="udc-label">Venue</span>
-              <span class="udc-val-main">Green Palace Auditorium</span>
-              <span class="udc-val-sub">Palace Road, Central Auditorium Hall</span>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <article class="ev-card ev-card-hero reveal">
-        <span class="ev-num">02</span>
-        <p class="ev-kicker">Monday &middot; 21 September 2026</p>
-        <h3 class="ev-name">Walima &amp; Reception</h3>
-        <div class="udc-card">
-          <div class="udc-row">
-            <div class="udc-icon-box">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
-            </div>
-            <div class="udc-text">
-              <span class="udc-label">Time</span>
-              <span class="udc-val-main">11:00 AM &ndash; 3:00 PM</span>
-              <span class="udc-val-sub">(Banquet from 12:30 PM)</span>
-            </div>
-          </div>
-          <div class="udc-divider"></div>
-          <div class="udc-row">
-            <div class="udc-icon-box">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.6-7-11a7 7 0 0 1 14 0c0 4.4-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            </div>
-            <div class="udc-text">
-              <span class="udc-label">Venue</span>
-              <span class="udc-val-main">Green Palace Auditorium</span>
-              <span class="udc-val-sub">Palace Road, Central Auditorium Hall</span>
+              <span class="udc-val-main">Rajah Hall</span>
+              <span class="udc-val-sub">Muthuvattoor</span>
             </div>
           </div>
         </div>
@@ -1039,12 +954,13 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
 
     <div class="family-grid">
       <div class="fam-block reveal reveal-d1">
-        <div class="fb-name">Mohamed Naheem</div>
+        <div class="fb-name">Favas Rashid</div>
         <div class="fb-role">Son of</div>
         <div class="fb-details">
-          <strong>Suhra &amp; Moideen</strong>
+          <strong>Mr. K.V. Rashid &amp; Mrs. Meharunisa</strong><br>
+          <span style="font-size:13.5px;opacity:0.85;display:inline-block;margin-top:6px;">G/s/o (Late) A.V. Kunjimon Haji &amp; (Late) V D. Shamsudheen Haji</span>
         </div>
-        <div class="fb-addr">(S/o Suhra &amp; Moideen)</div>
+        <div class="fb-addr">Kekkiniyath House Thalakotukara, Kechery, Thrissur, Dt.</div>
       </div>
 
       <div class="fam-center reveal">
@@ -1059,12 +975,13 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
       </div>
 
       <div class="fam-block reveal reveal-d2">
-        <div class="fb-name">Reem Fathima</div>
+        <div class="fb-name">Lamia Zenbaq</div>
         <div class="fb-role">Daughter of</div>
         <div class="fb-details">
-          <strong>Abida &amp; Abbas</strong>
+          <strong>Mr. V.P. Sharafudheen &amp; Mrs. Hasna Sharafudheen</strong><br>
+          <span style="font-size:13.5px;opacity:0.85;display:inline-block;margin-top:6px;">G/d/o (Late) Mohamed Ali &amp; (Late) Mrs. Nabeesakutty (Nalakath kuruvamkazhil)<br>G/d/o (Late) Shahul Hameed &amp; Mrs. Suhara Hameed (Ansar Bhavan)</span>
         </div>
-        <div class="fb-addr">(D/o Abida &amp; Abbas)</div>
+        <div class="fb-addr">Valiyakath Perum Veetil Pookulam Road, Chavakkad &middot; Ph: 9847128584</div>
       </div>
     </div>
   </div>
@@ -1078,7 +995,7 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
     <div class="fbl-divider"></div>
 
     <div class="fbl-caption">Barakallahu Lakuma</div>
-    <div class="fbl-sub">Mohamed Naheem &amp; Reem Fathima</div>
+    <div class="fbl-sub">Favas Rashid &amp; Lamia Zenbaq</div>
 
     <div class="fbl-divider"></div>
     <p class="fbl-arabic" lang="ar">&#1576;&#1614;&#1575;&#1585;&#1614;&#1603;&#1614; &#1575;&#1604;&#1604;&#1617;&#1614;&#1607;&#1615; &#1604;&#1614;&#1603;&#1615;&#1605;&#1614;&#1575; &#1608;&#1614;&#1576;&#1614;&#1575;&#1585;&#1614;&#1603;&#1614; &#1593;&#1614;&#1604;&#1614;&#1610;&#1618;&#1603;&#1615;&#1605;&#1614;&#1575; &#1608;&#1614;&#1580;&#1614;&#1605;&#1614;&#1593;&#1614; &#1576;&#1614;&#1610;&#1618;&#1606;&#1614;&#1603;&#1615;&#1605;&#1614;&#1575; &#1601;&#1616;&#1610; &#1582;&#1614;&#1610;&#1618;&#1585;&#1613;</p>
@@ -1087,6 +1004,21 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
       and <em>unite you together in goodness.</em>&rdquo;
       <cite>The Prophetic Du&rsquo;a for the Newly Wed</cite>
     </p>
+  </div>
+</section>
+
+<!-- PHOTO SPOTLIGHT -->
+<section class="photo-spotlight-section">
+  <div class="pss-inner reveal">
+    <p class="s-label" style="text-align:center">Memories</p>
+    <h2 class="s-title" style="text-align:center">Where two stories<br><em>became one</em></h2>
+    <div class="s-rule" style="margin:18px auto 0"></div>
+    <div class="photo-card-wrap">
+      <div class="photo-card-frame">
+        <img src="assets/couple-childhood.jpg" alt="Favas &amp; Lamia" loading="lazy">
+      </div>
+    </div>
+    <p class="photo-caption">Favas Rashid &amp; Lamia Zenbaq</p>
   </div>
 </section>
 
@@ -1124,7 +1056,7 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
 <div id="wishSuccessModal" class="wish-modal-overlay" style="display:none" onclick="if(event.target===this) closeWishSuccessModal()">
   <div class="wish-modal-card">
     <h3 class="wish-modal-title">Blessing Sent</h3>
-    <p class="wish-modal-sub">Thank you for your heartfelt wish for<br><strong>Mohamed Naheem &amp; Reem Fathima</strong>.</p>
+    <p class="wish-modal-sub">Thank you for your heartfelt wish for<br><strong>Favas Rashid &amp; Lamia Zenbaq</strong>.</p>
     <button class="wish-modal-btn" onclick="closeWishSuccessModal()">Close</button>
   </div>
 </div>
@@ -1133,12 +1065,12 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
 <footer>
   <div class="ft-left">
     With love &amp; blessings<br>
-    21 September 2026
+    14 November 2026
   </div>
-  <div class="ft-center">Mohamed Naheem &amp; Reem Fathima</div>
+  <div class="ft-center">Favas Rashid &amp; Lamia Zenbaq</div>
   <div class="ft-right">
-    Green Palace Auditorium<br>
-    Palace Road &middot; Central Auditorium Hall
+    Rajah Hall<br>
+    Muthuvattoor
   </div>
 
   
@@ -1148,7 +1080,7 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
 
 <script>
 /* ===== CONFIG ===== */
-var API_BASE_URL     = window.API_BASE_URL || "https://naheem-reem-zrkd.onrender.com";
+var API_BASE_URL     = window.API_BASE_URL || ((location.protocol === "file:" || location.hostname === "localhost" || location.hostname === "127.0.0.1" || location.hostname === "") ? "http://localhost:5001" : "https://naheem-reem-zrkd.onrender.com");
 var WISH_PATH        = "sahal-fasmina-2-v1/wishes";
 var BGM_PATH         = "sahal-fasmina-2/bgm-url";
 var COVER_PATH       = "sahal-fasmina-2/cover-url";
@@ -1159,7 +1091,7 @@ var LS               = "sf2_";    /* github.io is ONE origin for every invite -
                                      share each other's "my wishes" list */
 var ADMIN_PIN        = "2026SF";
 var WORKER_URL       = "https://digiwed-media-broker.murshid161.workers.dev/";
-var COUPLE_LABEL     = "Mohamed Naheem & Reem Fathima";
+var COUPLE_LABEL     = "Favas Rashid & Lamia Zenbaq";
 
 var FIREBASE_CONFIG = {
   apiKey:"AIzaSyB41fvxvl1KeHOro6WKJ72o22izuCpJ-b4",
@@ -1168,16 +1100,16 @@ var FIREBASE_CONFIG = {
 };
 
 var DEFAULT_COVER = "https://imagedelivery.net/pXU-KzWtO2cgM-XrR20TQg/9aa4c918-902d-4d87-bcda-abdbeddd0a00/public";
-var DEFAULT_FILM  = "https://pub-bc01cea1ca914ad8aba6c7541c55c7fb.r2.dev/digiwed-invitations-sahal-fasmina-2-video/hero-clouds-sound.mp4";   /* h264 + the clip's ORIGINAL aac track, stream-copied */
+var DEFAULT_FILM  = "assets/video.mp4";
 
-var VENUE_QUERY = "Green Palace Auditorium Palace Road Central Auditorium Hall";
-var WEDDING_UTC = "2026-09-21T05:00:00Z";           /* Mon 21 Sep 2026, 10:30 AM IST */
+var VENUE_QUERY = "Rajah Hall Muthuvattoor";
+var WEDDING_UTC = "2026-11-14T05:30:00Z";           /* Sat 14 Nov 2026, 11:00 AM IST */
 var CAL = {
-  title:"Wedding Ceremony & Reception of Mohamed Naheem & Reem Fathima",
-  start:"20260921T050000Z",
-  end:"20260921T093000Z",
-  loc:"Green Palace Auditorium, Palace Road, Central Auditorium Hall",
-  desc:"Holy Nikkah Ceremony at 10:30 AM, Walima & Reception 11:00 AM – 3:00 PM — Monday, 21 September 2026."
+  title:"Nikkah Ceremony of Favas Rashid & Lamia Zenbaq",
+  start:"20261114T053000Z",
+  end:"20261114T090000Z",
+  loc:"Rajah Hall, Muthuvattoor",
+  desc:"Nikkah ceremony at 11:00 AM, Lunch Thereafter — Saturday, 14 November 2026."
 };
 
 /* ===== TOAST (standard #2 — never a blocking browser dialog) ===== */
@@ -1942,7 +1874,7 @@ async function downloadInvitePDF() {
       pdf.addImage(sl.toDataURL("image/jpeg", 0.92), "JPEG", 0, 0, pW, sliceH * ratio);
       y += sliceH;
     }
-    pdf.save("Mohamed-Naheem-and-Reem-Fathima-Wedding.pdf");
+    pdf.save("Favas-Rashid-and-Lamia-Zenbaq-Wedding.pdf");
   } catch(e) {
     console.warn("PDF error:", e);
     window.print();
@@ -1955,34 +1887,43 @@ async function downloadInvitePDF() {
 /* ===== BOOT ===== */
 document.addEventListener("DOMContentLoaded", function(){
   /* links */
-  document.getElementById("mapsLink").href =
-    "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(VENUE_QUERY);
+  var maps = document.getElementById("mapsLink");
+  if (maps) {
+    maps.href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(VENUE_QUERY);
+  }
   var cal = document.getElementById("calLink");
-  cal.href = "https://www.google.com/calendar/render?action=TEMPLATE"
-    + "&text=" + encodeURIComponent(CAL.title)
-    + "&dates=" + CAL.start + "/" + CAL.end
-    + "&location=" + encodeURIComponent(CAL.loc)
-    + "&details=" + encodeURIComponent(CAL.desc);
-  cal.target = "_blank"; cal.rel = "noopener";
+  if (cal) {
+    cal.href = "https://www.google.com/calendar/render?action=TEMPLATE"
+      + "&text=" + encodeURIComponent(CAL.title)
+      + "&dates=" + CAL.start + "/" + CAL.end
+      + "&location=" + encodeURIComponent(CAL.loc)
+      + "&details=" + encodeURIComponent(CAL.desc);
+    cal.target = "_blank"; cal.rel = "noopener";
+  }
 
   startCountdown();
   updateBgmBtn();
 
-  document.getElementById("adminPinInput").addEventListener("keydown", function(e){
-    if (e.key === "Enter") checkPin();
-  });
+  var pinInput = document.getElementById("adminPinInput");
+  if (pinInput) {
+    pinInput.addEventListener("keydown", function(e){
+      if (e.key === "Enter") checkPin();
+    });
+  }
 
-  /* long-press the DigiWed credit → admin (see memory: credit long-press) */
-  var pressT, credit = document.getElementById("dwCredit");
-  var startPress = function(){ pressT = setTimeout(function(){ credit.dataset.lp = "1"; openAdminModal(); }, 900); };
-  var endPress   = function(){ clearTimeout(pressT); };
-  credit.addEventListener("touchstart", startPress, { passive: true });
-  credit.addEventListener("touchend", endPress);
-  credit.addEventListener("mousedown", startPress);
-  credit.addEventListener("mouseup", endPress);
-  credit.addEventListener("click", function(e){
-    if (credit.dataset.lp === "1") { e.preventDefault(); credit.dataset.lp = ""; }
-  });
+  /* long-press the DigiWed credit → admin */
+  var pressT, credit = document.getElementById("dwCredit") || document.querySelector(".dw");
+  if (credit) {
+    var startPress = function(){ pressT = setTimeout(function(){ credit.dataset.lp = "1"; openAdminModal(); }, 900); };
+    var endPress   = function(){ clearTimeout(pressT); };
+    credit.addEventListener("touchstart", startPress, { passive: true });
+    credit.addEventListener("touchend", endPress);
+    credit.addEventListener("mousedown", startPress);
+    credit.addEventListener("mouseup", endPress);
+    credit.addEventListener("click", function(e){
+      if (credit.dataset.lp === "1") { e.preventDefault(); credit.dataset.lp = ""; }
+    });
+  }
 
   /* Firebase (deferred SDK is now parsed) */
   try {

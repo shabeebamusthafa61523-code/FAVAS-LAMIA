@@ -11,4 +11,6 @@ const wishSchema = new mongoose.Schema({
   }
 }, { timestamps: true });
 
+wishSchema.index({ createdAt: -1 });
+
 module.exports = mongoose.model('Wish', wishSchema);

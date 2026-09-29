@@ -18,7 +18,7 @@ let memoryWishes = [];
 let memoryConfig = {
   coverUrl: 'https://imagedelivery.net/pXU-KzWtO2cgM-XrR20TQg/9aa4c918-902d-4d87-bcda-abdbeddd0a00/public',
   bgmUrl: '',
-  heroVideoUrl: 'https://pub-bc01cea1ca914ad8aba6c7541c55c7fb.r2.dev/digiwed-invitations-sahal-fasmina-2-video/hero-clouds-sound.mp4',
+  heroVideoUrl: 'assets/video.mp4',
   adminPin: DEFAULT_PIN
 };
 
@@ -88,24 +88,24 @@ app.post('/api/admin/config', async (req, res) => {
 
 // GET Wishes (Paginated)
 app.get('/api/wishes', async (req, res) => {
-  try {
-    const page = parseInt(req.query.page) || 1;
-    const limit = parseInt(req.query.limit) || 6;
-    const skip = (page - 1) * limit;
+  const page = parseInt(req.query.page) || 1;
+  const limit = parseInt(req.query.limit) || 6;
+  const skip = (page - 1) * limit;
 
-    if (isMongoConnected) {
+  try {
+    if (isMongoConnected && mongoose.connection.readyState === 1) {
       const [wishes, total] = await Promise.all([
-        Wish.find().sort({ createdAt: -1 }).skip(skip).limit(limit),
-        Wish.countDocuments()
+        Wish.find().sort({ createdAt: -1 }).skip(skip).limit(limit).maxTimeMS(3000).lean(),
+        Wish.countDocuments().maxTimeMS(3000)
       ]);
       const formatted = wishes.map(w => ({
         key: w._id.toString(),
         name: w.name,
         msg: w.msg,
-        time: w.time || new Date(w.createdAt).toLocaleString(),
-        likes: w.likes,
-        reply: w.reply && w.reply.msg ? { msg: w.reply.msg, ts: w.reply.createdAt.getTime() } : null,
-        ts: w.createdAt.getTime()
+        time: w.time || (w.createdAt ? new Date(w.createdAt).toLocaleString() : ''),
+        likes: w.likes || 0,
+        reply: (w.reply && w.reply.msg) ? { msg: w.reply.msg, ts: w.reply.createdAt ? new Date(w.reply.createdAt).getTime() : Date.now() } : null,
+        ts: w.createdAt ? new Date(w.createdAt).getTime() : Date.now()
       }));
       return res.json({ wishes: formatted, total, hasMore: skip + wishes.length < total });
     }
@@ -114,7 +114,10 @@ app.get('/api/wishes', async (req, res) => {
     const paginated = memoryWishes.slice(skip, skip + limit);
     res.json({ wishes: paginated, total, hasMore: skip + paginated.length < total });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.warn('Wishes fetch fallback:', err.message);
+    const total = memoryWishes.length;
+    const paginated = memoryWishes.slice(skip, skip + limit);
+    res.json({ wishes: paginated, total, hasMore: skip + paginated.length < total });
   }
 });
 
@@ -239,14 +242,27 @@ app.listen(PORT, () => {
 
 // Connect to MongoDB Atlas (if MONGODB_URI is provided in .env)
 if (MONGODB_URI) {
-  mongoose.connect(MONGODB_URI)
+  mongoose.connect(MONGODB_URI, {
+    serverSelectionTimeoutMS: 5000,
+    socketTimeoutMS: 10000
+  })
     .then(() => {
       isMongoConnected = true;
       console.log('✅ Connected to MongoDB Atlas successfully');
     })
     .catch((err) => {
+      isMongoConnected = false;
       console.warn('⚠️ MongoDB Connection Warning (Using in-memory storage fallback):', err.message);
     });
+
+  mongoose.connection.on('disconnected', () => {
+    isMongoConnected = false;
+    console.warn('⚠️ MongoDB disconnected.');
+  });
+  mongoose.connection.on('reconnected', () => {
+    isMongoConnected = true;
+    console.log('✅ MongoDB reconnected.');
+  });
 } else {
   console.log('ℹ️ No MONGODB_URI set in backend/.env. Using local in-memory storage.');
 }
