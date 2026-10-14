@@ -749,7 +749,10 @@ body.pdf-capturing .reveal{opacity:1!important;transform:none!important}
 <div id="bg"></div>
 <div id="petals"></div>
 <div id="toast"></div>
-<audio id="bgmAudio" src="assets/bgmusic.mpeg" preload="auto" loop crossorigin="anonymous"></audio>
+<audio id="bgmAudio" preload="auto" loop playsinline webkit-playsinline crossorigin="anonymous">
+  <source src="assets/bgmusic.mp3" type="audio/mpeg">
+  <source src="assets/bgmusic.mpeg" type="audio/mpeg">
+</audio>
 
 <!-- ADMIN modal -->
 <div id="adminModal">
@@ -1429,27 +1432,54 @@ document.addEventListener("visibilitychange", function(){
 /* ===== BGM (streamed from R2 — never base64, standard #10) ===== */
 var bgmAudio = document.getElementById("bgmAudio");
 var bgmPlaying = false, bgmBound = false;
+
+function hasAudioSource() {
+  if (!bgmAudio) return false;
+  return !!(bgmAudio.currentSrc || bgmAudio.getAttribute("src") || (bgmAudio.querySelector("source") && bgmAudio.querySelector("source").getAttribute("src")));
+}
+
 window.startBGM = function() {
-  if (!bgmAudio.getAttribute("src")) return;   /* nothing uploaded yet */
-  bgmAudio.play().catch(function(){}); bgmPlaying = true; updateBgmBtn();
+  if (!hasAudioSource()) return;
+  var p = bgmAudio.play();
+  if (p && p.catch) {
+    p.catch(function(err){
+      console.log("startBGM autotap needed:", err);
+      /* Fallback: play on next user touch anywhere */
+      var onFirstTouch = function() {
+        bgmAudio.play().then(function(){
+          bgmPlaying = true; updateBgmBtn();
+        }).catch(function(){});
+        document.removeEventListener("touchstart", onFirstTouch);
+        document.removeEventListener("click", onFirstTouch);
+      };
+      document.addEventListener("touchstart", onFirstTouch, { passive: true, once: true });
+      document.addEventListener("click", onFirstTouch, { once: true });
+    });
+  }
+  bgmPlaying = true;
+  updateBgmBtn();
 };
-/* Called from inside the OPEN tap. Playing and immediately pausing the element
-   marks it as user-initiated, so the real play() after the film is allowed. */
-/* Only ever show the music button when there is music. Until the couple
-   uploads a track the control would do nothing, and a dead control on a
-   wedding invite reads as a broken page. */
+
 function showBgmBar() {
-  if (!heroNamed) return;                       /* the film still has the sound */
-  if (!bgmAudio.getAttribute("src")) return;    /* nothing uploaded yet */
+  if (!heroNamed) return;
+  if (!hasAudioSource()) return;
   var bar = document.getElementById("bgmBar");
   if (bar) bar.style.display = "block";
 }
+
 function unlockBgm() {
   try {
-    if (!bgmAudio.getAttribute("src")) return;
+    if (!hasAudioSource()) return;
     var p = bgmAudio.play();
-    if (p && p.then) p.then(function(){ bgmAudio.pause(); bgmAudio.currentTime = 0; }).catch(function(){});
-    else { bgmAudio.pause(); bgmAudio.currentTime = 0; }
+    if (p && p.then) {
+      p.then(function(){
+        bgmAudio.pause();
+        bgmAudio.currentTime = 0;
+      }).catch(function(){});
+    } else {
+      bgmAudio.pause();
+      bgmAudio.currentTime = 0;
+    }
   } catch(e){}
 }
 function toggleBgm() {
